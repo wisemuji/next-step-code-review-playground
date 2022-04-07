@@ -38,7 +38,7 @@ const StringCalculator = (args) => {
         return calculator(number - 1, input) * Number.parseInt(input[number + 1]);
     };
 
-
+    return calculator(inputs.length - 1, inputs);
 };
 
 console.log(StringCalculator("1 + 2"));
