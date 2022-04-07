@@ -22,6 +22,22 @@ const StringCalculator = (args) => {
         }
     };
 
+    const add = (number, input) => {
+        return calculator(number - 1, input) + Number.parseInt(input[number + 1]);
+    };
+
+    const subtract = (number, input) => {
+        return calculator(number - 1, input) - Number.parseInt(input[number + 1]);
+    };
+
+    const divide = (number, input) => {
+        return calculator(number - 1, input) / Number.parseInt(input[number + 1]);
+    };
+
+    const multiply = (number, input) => {
+        return calculator(number - 1, input) * Number.parseInt(input[number + 1]);
+    };
+
 
 };
 
