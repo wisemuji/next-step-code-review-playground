@@ -1,9 +1,11 @@
 public class StringCalculator {
 
 
-    public String[] result(String input) {
-        String[] inputs = input.split(" ");
 
+
+    public int result(String input) {
+        String[] inputs = input.split(" ");
+        return calculator(inputs.length -1, inputs);
     }
 
     public int calculator(int number, String[] input) {
