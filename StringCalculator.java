@@ -1,8 +1,9 @@
-package java;
-
 public class StringCalculator {
 
-
+    public static void main(String ... args) {
+        StringCalculator stringCalculator = new StringCalculator();
+        System.out.println(stringCalculator.result("1 + 2"));
+    }
 
 
     public int result(String input) {
